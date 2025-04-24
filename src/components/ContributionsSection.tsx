@@ -20,7 +20,7 @@ const ContributionsSection = () => {
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
             <div className="md:col-span-4">
               <img 
-                src="/monumento.png" 
+                src="/Portfolio/monumento.png" 
                 alt="Google Summer of Code" 
                 className="w-full h-auto rounded-xl shadow-md"
               />

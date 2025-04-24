@@ -54,7 +54,7 @@ const HeroSection = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-primary to-accent rounded-full opacity-20 animate-float"></div>
               <div className="absolute inset-2 bg-white rounded-full overflow-hidden border-4 border-white shadow-xl">
                 <img 
-                  src="/personal/avatar.jpeg"
+                  src="/Portfolio/personal/avatar.jpeg"
                   alt="Vipin Kumar" 
                   className="w-full h-full object-cover"
                 />

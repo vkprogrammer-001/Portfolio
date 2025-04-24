@@ -18,7 +18,7 @@ const AboutSection = () => {
             <div className="relative">
               <div className="w-full max-w-md glass-card p-6 animate-fade-in">
                 <img 
-                  src="/personal/vk1.jpg" 
+                  src="/Portfolio/personal/vk1.jpg" 
                   alt="Vipin Kumar working" 
                   className="w-full h-auto rounded-lg shadow-md"
                 />

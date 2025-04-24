@@ -23,7 +23,7 @@ To run this project locally:
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/portfolio.git
+git clone https://github.com/vkprogrammer-001/Portfolio.git
 
 # Navigate to project directory
 cd portfolio

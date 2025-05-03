@@ -1,7 +1,7 @@
 
-import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Send } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
+import { Mail, MapPin, Phone, Send } from 'lucide-react';
+import React, { useState } from 'react';
 
 const ContactSection = () => {
   const { toast } = useToast();

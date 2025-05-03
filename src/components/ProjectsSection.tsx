@@ -1,36 +1,35 @@
 
-import React from 'react';
-import { Github, ExternalLink } from 'lucide-react';
+import { ExternalLink, Github } from 'lucide-react';
 
 const ProjectsSection = () => {
   const projects = [
     {
-      title: "ShoppingHut",
-      description: "A modern shopping app built with Flutter, connected to the Fake Store API for dynamic product listing and smooth user interaction.",
-      image: "https://images.unsplash.com/photo-1607082350899-7e105aa886ae?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80",
-      technologies: ["Flutter", "Dart", "Dio"],
-      features: ["Cart Management", "Wishlist", "User Authentication"],
-      githubLink: "https://github.com",
-      demoLink: "https://demo.com",
-    },
-    {
-      title: "FluttyCalc",
-      description: "A minimalist calculator app to solve basic arithmetic with a clean user interface.",
-      image: "https://images.unsplash.com/photo-1587145820266-a5951ee6f620?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80",
-      technologies: ["Flutter", "Dart"],
-      features: ["Addition", "Subtraction", "Multiplication", "Division"],
-      githubLink: "https://github.com",
-      demoLink: "https://demo.com",
-    },
-    {
       title: "GitHub Account Finder",
       description: "A web-based tool to search and display GitHub profiles, built with React.",
-      image: "https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80",
+      image: "/Portfolio/projects/githubfinder.png",
       technologies: ["React.js", "HTML", "CSS"],
       features: ["Profile Search", "API Integration", "Responsive Design"],
-      githubLink: "https://github.com",
+      githubLink: "https://github.com/vkprogrammer-001/GitHubFinder.git",
       demoLink: "https://demo.com",
-    }
+    },
+    {
+      title: "ShoppingHut",
+      description: "A modern shopping app built with Flutter, connected to the Fake Store API for dynamic product listing and smooth user interaction.",
+      image: "/Portfolio/projects/shoppinghut.png",
+      technologies: ["Flutter", "Dart", "Dio"],
+      features: ["Cart Management", "Wishlist", "User Authentication"],
+      githubLink: "https://github.com/vkprogrammer-001/ShoppingHut.git",
+      demoLink: "https://demo.com",
+    },
+    // {
+    //   title: "FluttyCalc",
+    //   description: "A minimalist calculator app to solve basic arithmetic with a clean user interface.",
+    //   image: "/Portfolio/githubfinder/githubfinder.png",
+    //   technologies: ["Flutter", "Dart"],
+    //   features: ["Addition", "Subtraction", "Multiplication", "Division"],
+    //   githubLink: "https://github.com",
+    //   demoLink: "https://demo.com",
+    // },
   ];
 
   return (

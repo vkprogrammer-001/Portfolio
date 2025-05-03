@@ -1,6 +1,5 @@
-
-import React from 'react';
-import { Code, Laptop, GraduationCap } from 'lucide-react';
+import { scrollToSection } from '@/lib/utils';
+import { Code, GraduationCap, Laptop } from 'lucide-react';
 
 const AboutSection = () => {
   return (
@@ -73,7 +72,14 @@ const AboutSection = () => {
             </div>
             
             <div className="flex flex-wrap gap-4">
-              <a href="#projects" className="btn-primary">
+              <a 
+                href="#projects" 
+                className="btn-primary"
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection('projects');
+                }}
+              >
                 View Projects
               </a>
               <a href="https://drive.google.com/file/d/1h3xAhkZs_7HQmyvn01fSAwpExw0GhzDd/view?usp=sharing" className="btn-outline" target="_blank" rel="noopener noreferrer">

@@ -1,6 +1,5 @@
-
-import React from 'react';
-import { Github, Linkedin, Book } from 'lucide-react';
+import { scrollToSection } from '@/lib/utils';
+import { Book, Github, Linkedin } from 'lucide-react';
 
 const HeroSection = () => {
   return (
@@ -27,10 +26,24 @@ const HeroSection = () => {
               </p>
               
               <div className="pt-4 flex flex-wrap gap-4">
-                <a href="#projects" className="btn-primary">
+                <a 
+                  href="#projects" 
+                  className="btn-primary"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    scrollToSection('projects');
+                  }}
+                >
                   View My Work
                 </a>
-                <a href="#contact" className="btn-outline">
+                <a 
+                  href="#contact" 
+                  className="btn-outline"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    scrollToSection('contact');
+                  }}
+                >
                   Contact Me
                 </a>
               </div>

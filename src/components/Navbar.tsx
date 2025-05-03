@@ -1,7 +1,6 @@
-
-import React, { useState, useEffect } from 'react';
+import { cn, scrollToSection } from '@/lib/utils';
 import { Menu, X } from 'lucide-react';
-import { cn } from '@/lib/utils';
+import { useEffect, useState } from 'react';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,12 +21,9 @@ const Navbar = () => {
     };
   }, []);
 
-  const scrollToSection = (id: string) => {
+  const handleScrollToSection = (id: string) => {
     setIsMenuOpen(false);
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+    scrollToSection(id);
   };
 
   const navLinks = [
@@ -57,7 +53,7 @@ const Navbar = () => {
           {navLinks.map(link => (
             <button 
               key={link.id}
-              onClick={() => scrollToSection(link.id)} 
+              onClick={() => handleScrollToSection(link.id)} 
               className="nav-link"
             >
               {link.label}
@@ -68,7 +64,7 @@ const Navbar = () => {
             className="ml-4 btn-primary"
             onClick={(e) => {
               e.preventDefault();
-              scrollToSection('contact');
+              handleScrollToSection('contact');
             }}
           >
             Let's Connect
@@ -91,14 +87,14 @@ const Navbar = () => {
             {navLinks.map(link => (
               <button 
                 key={link.id}
-                onClick={() => scrollToSection(link.id)} 
+                onClick={() => handleScrollToSection(link.id)} 
                 className="text-left py-2 px-4 hover:bg-muted rounded-md transition-colors"
               >
                 {link.label}
               </button>
             ))}
             <button 
-              onClick={() => scrollToSection('contact')}
+              onClick={() => handleScrollToSection('contact')}
               className="btn-primary mt-4 text-center"
             >
               Let's Connect

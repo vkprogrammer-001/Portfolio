@@ -1,5 +1,4 @@
-
-import React from 'react';
+import { scrollToSection } from '@/lib/utils';
 import { ArrowUp } from 'lucide-react';
 
 const Footer = () => {
@@ -40,16 +39,44 @@ const Footer = () => {
           </div>
           
           <div className="mt-4 md:mt-0 flex space-x-6">
-            <a href="#about" className="text-sm text-white/70 hover:text-white transition-colors">
+            <a 
+              href="#about" 
+              className="text-sm text-white/70 hover:text-white transition-colors"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection('about');
+              }}
+            >
               About
             </a>
-            <a href="#projects" className="text-sm text-white/70 hover:text-white transition-colors">
+            <a 
+              href="#projects" 
+              className="text-sm text-white/70 hover:text-white transition-colors"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection('projects');
+              }}
+            >
               Projects
             </a>
-            <a href="#blog" className="text-sm text-white/70 hover:text-white transition-colors">
+            <a 
+              href="#blog" 
+              className="text-sm text-white/70 hover:text-white transition-colors"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection('blog');
+              }}
+            >
               Blog
             </a>
-            <a href="#contact" className="text-sm text-white/70 hover:text-white transition-colors">
+            <a 
+              href="#contact" 
+              className="text-sm text-white/70 hover:text-white transition-colors"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection('contact');
+              }}
+            >
               Contact
             </a>
           </div>

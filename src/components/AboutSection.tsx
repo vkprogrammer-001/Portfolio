@@ -22,7 +22,7 @@ const AboutSection = () => {
                   className="w-full h-auto rounded-lg shadow-md"
                 />
                 <div className="absolute -bottom-4 -right-4 bg-white shadow-lg rounded-lg py-2 px-4 text-sm font-medium">
-                  <span className="text-primary">3+ Years Experience</span>
+                  <span className="text-primary">2+ Years Experience</span>
                 </div>
               </div>
             </div>
@@ -82,7 +82,7 @@ const AboutSection = () => {
               >
                 View Projects
               </a>
-              <a href="https://drive.google.com/file/d/1h3xAhkZs_7HQmyvn01fSAwpExw0GhzDd/view?usp=sharing" className="btn-outline" target="_blank" rel="noopener noreferrer">
+              <a href="https://drive.google.com/file/d/1ivFH8XDOMdynT1Pw_cLQI9yAMJLBDdVs/view?usp=sharing" className="btn-outline" target="_blank" rel="noopener noreferrer">
                 View CV
               </a>
             </div>

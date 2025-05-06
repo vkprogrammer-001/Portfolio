@@ -95,13 +95,13 @@ const ContributionsSection = () => {
               <div className="bg-white rounded-lg border border-border p-5 hover:shadow-md transition-shadow">
                 <div className="flex items-center mb-3">
                   <Github size={20} className="mr-2" />
-                  <h4 className="font-semibold">Flutter Packages</h4>
+                  <h4 className="font-semibold">Contributions to open source projects</h4>
                 </div>
                 <p className="text-foreground/80 text-sm mb-3">
-                  Contributed to several Flutter packages, focusing on UI components and state management solutions.
+                  Contributed to several project, focusing on bug fixes, feature enhancements, and documentation improvements.
                 </p>
                 <a 
-                  href="https://github.com"
+                  href="https://www.notion.so/1ebd25f52936806f8baad59acf428724?v=1ebd25f5293680a2a367000c8f34d150&pvs=4"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-primary text-sm font-medium hover:underline"
@@ -110,7 +110,7 @@ const ContributionsSection = () => {
                 </a>
               </div>
               
-              <div className="bg-white rounded-lg border border-border p-5 hover:shadow-md transition-shadow">
+              {/* <div className="bg-white rounded-lg border border-border p-5 hover:shadow-md transition-shadow">
                 <div className="flex items-center mb-3">
                   <Github size={20} className="mr-2" />
                   <h4 className="font-semibold">React Component Library</h4>
@@ -126,7 +126,7 @@ const ContributionsSection = () => {
                 >
                   View Contributions
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

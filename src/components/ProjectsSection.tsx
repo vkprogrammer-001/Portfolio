@@ -16,7 +16,7 @@ const ProjectsSection = () => {
       title: "ShoppingHut",
       description: "A modern shopping app built with Flutter, connected to the Fake Store API for dynamic product listing and smooth user interaction.",
       image: "/Portfolio/projects/shoppinghut.png",
-      technologies: ["Flutter", "Dart", "Dio"],
+      technologies: ["Flutter", "Dart", "Dio","Bloc"],
       features: ["Cart Management", "Wishlist", "User Authentication"],
       githubLink: "https://github.com/vkprogrammer-001/ShoppingHut.git",
       demoLink: "https://demo.com",
@@ -71,14 +71,14 @@ const ProjectsSection = () => {
                       >
                         <Github size={20} />
                       </a>
-                      <a 
+                      {/* <a 
                         href={project.demoLink} 
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="p-2 bg-white text-black rounded-full hover:bg-primary hover:text-white transition-colors"
                       >
                         <ExternalLink size={20} />
-                      </a>
+                      </a> */}
                     </div>
                   </div>
                 </div>

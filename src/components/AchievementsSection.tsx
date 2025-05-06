@@ -83,7 +83,7 @@ const AchievementsSection = () => {
             </p>
             <div className="mt-4">
               <div className="inline-flex items-center bg-accent/10 rounded-full px-4 py-2">
-                <span className="text-xl font-bold text-accent">150+</span>
+                <span className="text-xl font-bold text-accent">200+</span>
                 <span className="ml-2 text-sm text-foreground/70">
                   Problems Solved
                 </span>

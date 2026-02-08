@@ -36,10 +36,11 @@ const SkillsSection = () => {
     {
       title: "Tools",
       skills: [
+        { name: "Docker", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
+        { name: "Nginx", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" },
         { name: "Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
         { name: "GitHub", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" },
         { name: "GitLab", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" },
-        { name: "Docker", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
         { name: "Android Studio", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" },
         { name: "Xcode", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xcode/xcode-original.svg" },
       ]
@@ -91,7 +92,7 @@ const SkillsSection = () => {
             <h3 className="text-xl font-bold mb-4 text-center">Technical Problem Solving</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="flex flex-col items-center">
-                <div className="text-2xl font-bold text-primary mb-2">200+</div>
+                <div className="text-2xl font-bold text-primary mb-2">250+</div>
                 <div className="text-sm text-center text-foreground/70">
                   LeetCode Problems Solved
                 </div>

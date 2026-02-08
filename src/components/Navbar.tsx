@@ -29,6 +29,7 @@ const Navbar = () => {
   const navLinks = [
     { label: "About", id: "about" },
     { label: "Skills", id: "skills" },
+    { label: "Experience", id: "experience" },
     { label: "Projects", id: "projects" },
     { label: "Achievements", id: "achievements" },
     { label: "Contributions", id: "contributions" },

@@ -21,9 +21,9 @@ const AboutSection = () => {
                   alt="Vipin Kumar working" 
                   className="w-full h-auto rounded-lg shadow-md"
                 />
-                <div className="absolute -bottom-4 -right-4 bg-white shadow-lg rounded-lg py-2 px-4 text-sm font-medium">
+                {/* <div className="absolute -bottom-4 -right-4 bg-white shadow-lg rounded-lg py-2 px-4 text-sm font-medium">
                   <span className="text-primary">2+ Years Experience</span>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

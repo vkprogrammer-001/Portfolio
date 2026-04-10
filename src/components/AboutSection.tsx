@@ -82,7 +82,7 @@ const AboutSection = () => {
               >
                 View Projects
               </a>
-              <a href="https://drive.google.com/file/d/1ivFH8XDOMdynT1Pw_cLQI9yAMJLBDdVs/view?usp=sharing" className="btn-outline" target="_blank" rel="noopener noreferrer">
+              <a href="https://drive.google.com/file/d/16t1PkROSoqzT0lH1ftwVbCf7vqGVscd5/view?usp=sharing" className="btn-outline" target="_blank" rel="noopener noreferrer">
                 View CV
               </a>
             </div>

@@ -8,48 +8,33 @@ const ExperienceSection = () => {
 
   const experiences = [
     {
-      role: "Software Development Engineer (formerly Intern)",
+      role: "Software Development Engineer",
       company: "Findoc",
       location: "On-site (Gurgaon, India)",
-      duration: "Mar 2026 - Present",
+      duration: "Sept 2025 - Present",
       type: "Full-time",
       description: [
-        "Architected a standalone IPO Microservice and FinZoom frontend using Golang and Flutter, decoupling workflows to enable seamless NSE/BSE applications across web and mobile.",
-        "Developing FinTrader, a high-concurrency platform for real-time intraday and F&O trading, focusing on low-latency data synchronization and live execution for high-frequency users.",
-        "Revamped the FinDost partner portal using React.js and Vite, optimizing performance through Nginx and hybrid PostgreSQL/MongoDB storage to reduce data latency by 20%.",
+        "Built core modules of the FinZoom backend in Go (Fiber) for an app with 1K+ installs, shipping 190+ commits (Jun – Sep 2026) across orders, SIP/SWP/STP, mandates, payments, notifications and auth.",
+        "Engineered a webhook retry worker that reprocesses BSE order events arriving before the exchange SIP ID, so each order matches its SIP and is created in our database; this removed the main cause of failed SIP orders.",
+        "Developed cron reconciliation jobs that re-sync orders, mandates and SIPs with BSE when webhooks are missed (including SIPs created on BSE but failed locally), so no user's status is left stale; added alerts and daily digests.",
+        "Integrated BSE StAR MF APIs for the full SIP lifecycle: registration, pause/resume, top-up and amount updates, with auto-cancellation of SWP/STP orders when holdings fall short of scheme limits.",
+        "Automated first-installment SIP collection through bank and UPI mandates, adding BSE mandate link/delink, bulk import of missing mandates and lead-time rules (30 days for monthly, 5 days for daily SIPs).",
+        "Designed an AP bulk-order system for FinDost partners: PostgreSQL schema, payment-link generation, correlation-ID idempotency, partial-failure handling and concurrent email notifications using goroutines.",
+        "Delivered role-based access control for FinDost (React.js, Node.js) for Super-Admin, Admin and AP/DRA users; revamped partner portals with React/Vite behind Nginx, reducing latency by 20%.",
+        "Built an in-house IPO microservice in Go and Node.js for NSE/BSE retail applications, replacing a paid vendor API; developed FinZoom Flutter modules for NFO, SIP, SWP and STP flows.",
       ],
       technologies: [
-        "Golang",
-        "Node.js",
-        "Flutter",
-        "React.js",
+        "Golang (Fiber)",
         "PostgreSQL",
-        "MongoDB",
-        "Nginx",
-        "Vite",
-        "Microservices",
-      ],
-    },
-    {
-      role: "Software Development Intern",
-      company: "Findoc",
-      location: "On-site (Gurgaon, India)",
-      duration: "Sept 2025 - Mar 2026",
-      type: "Internship",
-      description: [
-        "Architected and deployed a specialized IPO Microservice, enabling in-house processing of retail investor applications and reducing reliance on external vendors.",
-        "Core contributor to 'Finzoom' and 'Findost' (flagship app), developing high-traffic features with ReactJS and Flutter in an agile 8-person team.",
-        "Managed full-stack integration for financial services, focusing on secure API communication and optimized database queries.",
-      ],
-      technologies: [
-        "ReactJS",
+        "Redis",
+        "Node.js",
+        "React.js",
         "Flutter",
+        "BSE StAR MF",
         "Microservices",
         "REST APIs",
-        "MySQL",
-        "MongoDB",
-        "Full-Stack",
         "Nginx",
+        "Vite",
       ],
     },
     {
@@ -181,12 +166,11 @@ const ExperienceSection = () => {
                       relative md:w-[47%] 
                       ${isLeft ? "md:mr-auto md:pr-8" : "md:ml-auto md:pl-8"}
                       transition-all duration-700 ease-out
-                      ${
-                        isVisible
-                          ? "opacity-100 translate-x-0"
-                          : isLeft
-                            ? "opacity-0 -translate-x-20"
-                            : "opacity-0 translate-x-20"
+                      ${isVisible
+                        ? "opacity-100 translate-x-0"
+                        : isLeft
+                          ? "opacity-0 -translate-x-20"
+                          : "opacity-0 translate-x-20"
                       }
                     `}
                   >
